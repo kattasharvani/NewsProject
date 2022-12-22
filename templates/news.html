@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link href="{% static 'css/news.css' %}" rel="stylesheet" />
+    <style>
+        h1{
+    color: deeppink;
+    background-color: greenyellow;
+    border-radius: 15px;
+    text-align: center;
+}
+img{
+    width:600px;
+    height:400px;
+    margin-left: 50px;
+
+}
+span{
+    background-color: azure;
+    color: blue;
+    text-align: center;
+    border-radius: 20px;
+}
+    </style>
+
+</head>
+<body>
+    <h1>{{ mainmsg }}</h1>
+    <hr/>
+    <br/>
+    <a href="/index/">Back to Home Page</a>
+    <br/><br/>
+    <ul>
+        <li><h2>{{ submsg1 }}</h2></li>
+        <li><h2>{{ submsg2 }}</h2></li>
+        <li><h2>{{ submsg3 }}</h2></li>
+    </ul>
+    <img src="{% static imgs %}" alt="{{ mainmsg }}" />
+    <br/>
+    <br/>
+    <a href="/index/">Back to Home Page</a>
+<br/>
+<br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d_HlPboLRL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

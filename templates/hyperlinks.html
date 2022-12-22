@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Hyperlinks Django-App</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        h1{
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Downloadable files</h1>
+    <ol>
+        <li><a href="{% static 'others/python-3.11.0-amd64.exe' %}">Click here to install pyhton</a> </li>
+        <li><a href="{% static 'others/npp.8.4.7.Installer.x64.exe' %}">Click here to install notepad++</a> </li>
+        </ol>
+        <br/>
+        <br/>
+        <h1>Audio Files</h1>
+        <audio controls>
+            <source src="{% static 'others/Alan_Walker_K-391_Emelie_Hollow_(getmp3.pro).mp3' %}" type="audio/mp3">
+            Your Borwser doesn't Support audio tag.
+        </audio>
+        <br/>
+        <br/>
+        <video width="500px" height="300px" controls>
+            <source src="{% static 'others/webpage event.mp4' %}"  type="video/mp4">
+             Your Borwser doesn't Support video tag.
+        </video>
+        <br/>
+        <br/>
+        <video width="500px" height="300px" controls>
+            <source src="https://www.youtube.com/embed/=PEnJbjBuxnw" type="video" >
+        </video>
+        <br/>
+        <br/>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/=PEnJbjBuxnw">
+        </iframe>
+    <br/><br/>
+        <embed style="height:300px;width:500px;" src="https://www.youtube.com/embed/=PEnJbjBuxnw" />
+        <br/>
+        <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PEnJbjBuxnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        <br/>
+        <video controls>x
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d_HlPboLRL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video>
+
+</body>
+</html>

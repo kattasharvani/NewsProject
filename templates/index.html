@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Shivani News Portal</title>
+    <link href="{% static 'css.news.css' %}" rel="stylesheet"/>
+    <style>
+        h1{
+    color: deeppink;
+    background-color: greenyellow;
+    border-radius: 15px;
+    text-align: center;
+}
+img{
+    width:200px;
+    height:150px;
+}
+span{
+    background-color: azure;
+    color: blue;
+    text-align: center;
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>Welcome to Shivani News Portal</h1>
+    <hr/>
+    <ul>
+        <span>***Categories***</span>
+        <li><a href="/india/" target="_blank">India News</a></li>
+        <li><a href="/sports/" target="_blank">Sports News</a></li>
+        <li><a href="/technology/" target="_blank">Technology News</a> </li>
+    </ul>
+
+</body>
+</html>
