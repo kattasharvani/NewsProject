@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 def index(req):
@@ -31,3 +32,6 @@ def sports(req):
 
 def hyperlinks(req):
     return render(req, 'hyperlinks.html');
+
+def f3(req):
+    return HttpResponse("<h1>this is new view function created</h1>");
