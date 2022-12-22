@@ -34,4 +34,8 @@ def hyperlinks(req):
     return render(req, 'hyperlinks.html');
 
 def f3(req):
-    return HttpResponse("<h1>this is new view function created</h1>");
+    return HttpResponse("<h1>this is new view function created in py charm</h1>");
+
+
+def f4(req):
+    return HttpResponse("<h1>this is new view function created in git hub</h1>");
